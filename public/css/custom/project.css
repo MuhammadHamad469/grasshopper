@@ -1,0 +1,255 @@
+/* General Styles */
+body {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card-no-bg {
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    color: #007bff;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* Project Card Specific Styles */
+.project-card-container {
+    width: 25%;
+    padding: 0 15px;
+    float: left;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 0.25rem;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.project-card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-card-text {
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+/* Progress Styles */
+.project-progress-card .project-card-body {
+    padding-bottom: 1rem;
+}
+
+.project-card-progress-container {
+    height: 10px;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    margin-top: auto;
+}
+
+.project-card-progress-bar {
+    height: 100%;
+    background-color: #17a2b8;
+}
+
+/* Badge Styles */
+.badge {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    height: 1.5rem;
+}
+
+.badge-primary { background-color: #007bff; color: white; }
+.badge-warning { background-color: #ffc107; color: black; }
+.badge-success { background-color: #28a745; color: white; }
+.badge-secondary { background-color: #6c757d; color: white; }
+
+.badge-pill {
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+}
+
+/* Text Styles */
+.text-muted { font-size: 1.1rem; }
+.text-muted-sub { font-size: 1.5rem; color: #616a71; }
+.text-muted-p { font-size: 1.3rem; color: #616a71; }
+.text-muted-sm { font-size: 1.2rem; color: #616a71; }
+.text-sub { font-size: 1.2rem; color: #5a5959; }
+.text-danger { color: #dc3545 !important; }
+.text-success { color: #28a745 !important; }
+
+/* List Styles */
+.list-group-item {
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0 !important;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0.5rem;
+}
+
+.list-group-item:first-child { border-top: 0; }
+.list-group-item:last-child { border-bottom: 0; }
+.list-group-item:hover { background-color: #f8f9fa; }
+
+.card ul li {
+    margin-bottom: 0.5rem;
+}
+
+.card ul li strong {
+    display: inline-block;
+    width: 120px;
+}
+
+/* Asset List Styles */
+.asset-list .list-group-item {
+    border-left: 3px solid #007bff;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.asset-list .list-group-item:hover {
+    background-color: #f8f9fa;
+    transform: translateX(5px);
+}
+
+.asset-list .list-group-item strong {
+    color: #007bff;
+}
+
+/* Time Info Styles */
+.time-info {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.time-info i {
+    font-size: 1.5rem;
+    color: #6c757d;
+}
+
+/* SVG Icon Styles */
+.svg-icon-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg-icon-container svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Table Styles */
+.table-bordered {
+    background-color: #f8f9fa;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border-color: #dee2e6;
+    padding: 0.75rem;
+}
+
+.table-bordered th {
+    background-color: #e9ecef;
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Responsive Styles */
+@media (max-width: 767.98px) {
+    .card-body {
+        padding: 1.5rem;
+    }
+    .table-responsive {
+        font-size: 0.9rem;
+    }
+    .table-bordered th,
+    .table-bordered td {
+        padding: 0.5rem;
+    }
+}
+
+.asset-list .list-group-item {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0.5rem;
+    border-left: 3px solid #007bff;
+}
+
+.asset-list .list-group-item:last-child {
+    margin-bottom: 0;
+}
+
+.progress {
+    height: 20px;
+    margin-bottom: 1rem;
+}
+
+.progress-bar {
+    background-color: #007bff;
+}
+
+.list-group-item {
+    padding: 0.75rem 1.25rem;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.badge-pill {
+    padding-right: 0.6em;
+    padding-left: 0.6em;
+    border-radius: 10rem;
+}
+
+@media (max-width: 767.98px) {
+    .col-md-4 {
+        margin-bottom: 1.5rem;
+    }
+}

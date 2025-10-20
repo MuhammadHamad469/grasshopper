@@ -1,0 +1,49 @@
+.project-table {
+    width: 100%;
+    background-color: #EBEAEE;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+    color: #000000;
+}
+.project-table th {
+    background-color: #216592;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+.project-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #ddd;
+}
+.project-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.project-table tr:hover {
+    background-color: #e6e6e6;
+}
+.status-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.status-completed {
+    background-color: #4b8da0;
+    color: white;
+}
+.status-ongoing {
+    background-color: #216592;
+    color: white;
+}
+.status-planned {
+    background-color: #34495e;
+    color: white;
+}
+
+.project-table tbody tr {
+    cursor: pointer;
+}
+.project-table tbody tr:hover {
+    background-color: #d6d6d6;
+}

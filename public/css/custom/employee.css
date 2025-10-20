@@ -1,0 +1,651 @@
+:root {
+    --primary-color: #086177;
+    --primary-light: #2a89a6;
+    --secondary-color: #3f37c9;
+    --success-color: #4cc9f0;
+    --warning-color: #2a89a6;
+    --info-color: #427998;
+    --light-bg: #f8f9fa;
+    --dark-bg: #212529;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --hover-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --border-radius: 0.5rem;
+}
+
+/*side bar*/
+.emp-profile-sidebar {
+    background: var(--light-bg);
+    border-right: 1px solid #e2e8f0;
+    padding: 2rem 1.5rem !important;
+    margin-top: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.emp-profile-status {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--success-color);
+    border: 2px solid white;
+}
+
+
+
+/* Profile Container */
+.emp-profile-container {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Profile Card */
+.emp-card {
+    /*background-color: #f6911f;*/
+    border-radius: var(--border-radius);
+    /*box-shadow: var(--card-shadow);*/
+    border: none;
+    transition: all 0.3s ease;
+    /*overflow: hidden;*/
+    /*margin-bottom: 2rem;*/
+    height: 1rem;
+}
+
+.emp-card:hover {
+    /*box-shadow: var(--hover-shadow);*/
+    transform: translateY(-5px);
+}
+
+.emp-card-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+
+.emp-card-body {
+    padding: 2rem;
+}
+
+/* Profile Image Section */
+.emp-profile-image-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.emp-profile-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.emp-profile-image-placeholder {
+    width: 180px;
+    height: 180px;
+    background-color: #e9ecef;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 5px solid white;
+    box-shadow: var(--card-shadow);
+}
+
+.emp-profile-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--dark-bg);
+    margin-bottom: 0.25rem;
+}
+
+.emp-profile-position {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.emp-profile-department {
+    color: #64748b;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.emp-profile-quick-stats {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.emp-stat-item {
+    text-align: center;
+}
+
+.emp-stat-value {
+    font-weight: 700;
+    color: var(--dark-bg);
+    margin-bottom: 0.25rem;
+}
+
+.emp-stat-label {
+    font-size: 0.75rem;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.emp-profile-bio {
+    font-size: 1.1rem;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 1.5rem 0;
+    text-align: left;
+    width: 100%;
+}
+
+/*contacts*/
+.emp-profile-contact {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.emp-contact-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #64748b;
+}
+
+.emp-contact-icon {
+    margin-right: 0.5rem;
+    color: var(--primary-color);
+}
+
+.emp-profile-social {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.emp-social-link {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    border: 1px solid #e2e8f0;
+    transition: var(--transition);
+}
+
+.emp-social-link:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/*tags*/
+.emp-profile-tag {
+    font-size: 1rem;
+    background: white;
+    color: var(--primary-color);
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 0.25rem 0.75rem;
+    transition: var(--transition);
+}
+
+.emp-profile-tag:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+
+.emp-profile-divider {
+    width: 100%;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 1rem 0;
+}
+
+
+/* Badges section */
+.emp-profile-badges {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.emp-badge {
+    position: relative;
+    width: 48px;
+    height: 48px;
+}
+
+.emp-badge-icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary-color);
+}
+
+.emp-badge-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--dark-bg);
+    color: white;
+    font-size: 0.90rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.emp-badge:hover .emp-badge-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px);
+}
+
+/* Custom Nav Tabs */
+.emp-tabs {
+    border-bottom: 2px solid #e2e8f0;
+    margin-bottom: 1.5rem;
+    /*margin: 0 -1rem;*/
+    display: flex;
+    overflow-x: auto;
+}
+
+.emp-tab-item {
+    padding: 0;
+    margin-right: 0.5rem;
+}
+
+.emp-tab-link {
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: #495057;
+    font-weight: 500;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    border: 1px solid transparent;
+    border-bottom: none;
+    transition: all 0.2s ease;
+}
+
+.emp-tab-link:hover {
+    color: var(--primary-color);
+    border-color: #e9ecef #e9ecef #dee2e6;
+}
+
+.emp-tab-link.active {
+    color: var(--primary-color);
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+    position: relative;
+}
+
+.emp-tab-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+/* Tab Content */
+.emp-tab-content {
+    padding: 2rem;
+    border: 1px solid #dee2e6;
+    border-top: 0;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    background-color: #fff;
+}
+
+.emp-tab-pane {
+    display: none;
+}
+
+.emp-tab-pane.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Information Rows */
+.emp-info-row {
+    display: flex;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.emp-info-row:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.emp-info-label {
+    flex: 0 0 30%;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.emp-info-value {
+    flex: 0 0 70%;
+    font-weight: 500;
+    color: #212529;
+}
+
+/* Progress Components */
+.emp-leave-cards {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.emp-progress-card {
+    flex: 1;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+}
+
+.emp-progress-title {
+    font-size: 1.1rem;
+    color: #495057;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+}
+
+.emp-progress-container {
+    height: 12px;
+    background-color: #e9ecef;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.emp-progress-bar {
+    height: 100%;
+    border-radius: 6px;
+    transition: width 0.6s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emp-progress-regular {
+    background-color: var(--primary-color);
+}
+
+.emp-progress-info {
+    background-color: var(--info-color);
+}
+
+.emp-progress-days {
+    font-size: 0.75rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.emp-progress-remaining {
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Stats Cards */
+/*.emp-stats-grid {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(3, 1fr);*/
+/*    gap: 1rem;*/
+/*    margin: 2rem 0;*/
+/*}*/
+
+.emp-stats-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 2rem 0;
+}
+
+.emp-stat-card {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    background-color: white;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+}
+
+.emp-stat-card:hover {
+    box-shadow: var(--hover-shadow);
+    transform: translateY(-3px);
+}
+
+.emp-stat-title {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.emp-stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.emp-stat-primary {
+    color: var(--primary-color);
+}
+
+.emp-stat-success {
+    color: var(--success-color);
+}
+
+.emp-stat-warning {
+    color: var(--warning-color);
+}
+
+/* Projects Table */
+.emp-section-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 2rem 0 1.2rem;
+    color: #212529;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.emp-section-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+.emp-projects-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+.emp-projects-table thead th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 500;
+    text-align: left;
+    padding: 1rem;
+}
+
+.emp-projects-table tbody tr {
+    background-color: white;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.emp-projects-table tbody tr:hover {
+    background-color: rgba(67, 97, 238, 0.05);
+}
+
+.emp-projects-table tbody td,
+.emp-projects-table tbody th {
+    padding: 1rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.emp-projects-table tbody tr:last-child td,
+.emp-projects-table tbody tr:last-child th {
+    border-bottom: none;
+}
+
+.emp-status {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.emp-status-active {
+    background-color: rgba(76, 201, 240, 0.1);
+    color: #4cc9f0;
+}
+
+
+.emp-status-completed {
+    background-color: rgba(63, 55, 201, 0.1);
+    color: #3f37c9;
+}
+
+/* Alert Styling */
+.emp-alert {
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.emp-alert-info {
+    background-color: rgba(67, 97, 238, 0.1);
+    border-left: 4px solid var(--info-color);
+    color: #086177;
+}
+
+.emp-alert-icon {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .emp-stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .emp-leave-cards {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .emp-stats-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .emp-card-body {
+        padding: 1.5rem;
+    }
+
+    .emp-tab-content {
+        padding: 1.5rem;
+    }
+
+    .emp-info-row {
+        flex-direction: column;
+    }
+
+    .emp-info-label, .emp-info-value {
+        flex: 0 0 100%;
+    }
+
+    .emp-info-label {
+        margin-bottom: 0.3rem;
+    }
+
+    .emp-profile-image,
+    .emp-profile-image-placeholder {
+        width: 150px;
+        height: 150px;
+    }
+
+    .emp-tab-link {
+        padding: 0.8rem 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .emp-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .emp-tab-item {
+        flex: 0 0 auto;
+    }
+}

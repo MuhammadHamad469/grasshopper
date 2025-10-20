@@ -1,0 +1,1 @@
+ALTER TABLE `clients` ADD `last_activity` DATE NULL DEFAULT NULL AFTER `is_active`;
